@@ -1,17 +1,30 @@
 <meta charset="utf-8">
 <!--PARTE EM HTML DO FONTE-->
-
-
-
+<h3>Digite o seu peso para calcularmos a quantidade de agua necessaria.</h3>
+<input type="text" id="txtUserPeso">
+<input type="submit" id="btnUserPesoSBMT" value="Salvar">
+<h3>A quantidade ideal de agua que você deve beber é de:.</h3>
+<input type="text" id="txtAguaIdeal">
+<h3>por dia!</h3>
 
 
 <!--PARTE EM JAVASCRIPT DO FONTE-->
-<<script>
+<script>
+/*BLOCO DE VARIAVEIS*/
+var UserPeso = document.getElementById('txtUserPeso');
+var AguaMls = 35;
+var LtrsDeAgua = 0;
+/*BLOCO DE METODOS*/
+var CalculoAgua = function() {
+  var var1 = UserPeso.value * 35;
+  document.getElementById('txtAguaIdeal').value = var1;
+}
+
+
+/*BLOCO PRINCIPAL*/
+btnUserPesoSBMT.onclick = CalculoAgua;
 
 
 
 
-
-
-    
-</script>>
+</script>
